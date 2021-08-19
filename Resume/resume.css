@@ -1,0 +1,385 @@
+*{
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    float: left;
+}
+body {
+    background-image: url(background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 20px;
+}
+.nav > div {
+    float: left;
+}
+.nav > div:first-child {
+    padding-left: 5%;
+    padding-top: 2%;
+}
+.nav > div:last-child {
+    padding-top: 5%;
+}
+.nav > div:last-child p:first-child {
+    font-size: 26px;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+.nav > div:last-child p:last-child{
+    font-size: 22px;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    color: #0a3c8c;
+    font-style: italic;
+}
+
+.image_div > img {
+   
+    border-radius: 50%;
+    width:90%;
+}
+.banner {
+    padding-top: 10%;
+}
+.links  {
+    float: right;
+    padding-top: 2%;
+    padding-right: 50px;
+    font-size: 16px;
+}
+.links > div > span {
+    padding-left: 10px;
+}
+.links > div {
+    padding-bottom: 10px;
+}
+.links > div > a {
+    text-decoration: none;
+    color:#0a3c8c;
+}
+.bio, .education , .skills, .interest, .references, .volunteer_experience{
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.bio_info, .bio_content, ul{
+    text-align: justify;
+    line-height: 1.5;
+}
+.bio_content {
+    margin-block-start: 20px;  
+}
+.role, .org, .course, .school {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.location {
+    float: right;
+    font-style: italic;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+.date {
+    float: left;
+    font-style: italic;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+.role,.course {
+    color:#0a3c8c;
+    font-size: 22px;
+}
+.org, .school{
+    font-size: 20px;
+}
+.course, .role {
+    font-weight: normal;
+}
+h3 {
+    color:#0a3c8c;
+}
+button {
+    padding: 12px 8px;
+    border-radius: 10px;
+    background-color:white;
+    text-decoration: none;
+    color:#0a3c8c;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-color: #0a3c8c;
+    font-size: 18px;
+}
+.skills > p {
+    text-align: center;
+}
+.bio_details {
+    
+    position: relative;
+}
+.column1 {
+    height: 100%;
+    padding: 5px;
+    border-left:2px solid #0a3c8c;
+    border-top: 2px solid #0a3c8c;
+    border-bottom: 2px solid #0a3c8c;
+    position: absolute;
+    left:-10px;
+}
+.column2 {
+    height: 100%;
+    padding: 5px;
+    position: absolute;
+    border-right:2px solid #0a3c8c;
+    border-top: 2px solid #0a3c8c;
+    border-bottom: 2px solid #0a3c8c;
+    right:-10px;
+    top:0px;
+}
+hr {
+    border: 1px solid #0a3c8c;
+}
+.container {
+    
+    margin: 10px;
+}
+.bio_first {
+    position: relative;
+}
+.work {
+    position: absolute;
+    height: 100%;
+    padding: 5px;
+    border-left:2px solid #0a3c8c;
+    left: -25px;
+}
+.work > span:first-child {
+    position: absolute;
+    border:5px solid #0a3c8c;
+    left:-5px;
+    top:-5px;
+    border-radius: 50%;
+}
+.work > span:last-child {
+    position: absolute;
+    border: 5px solid #0a3c8c;
+    border-radius: 50%;
+    bottom:0px;
+    left:-5px;
+}
+.title{
+    font-style: italic;
+    margin-block-start: 0px;
+}
+.name {
+    margin-block-end: 0px;
+}
+.work_icon {
+    padding-right: 20px;
+}
+.interest, .volunteer_experience, .references {
+    padding-bottom: 10px;
+}
+#showless_1, #showless_2, #showless_3 {
+    display: none;
+}
+.bttn {
+    display: none;
+}
+.bttn {
+    position: relative;
+   
+}
+#btn1, #btn2, #btn3{
+    position: absolute;
+    left:34%;
+    bottom:-50px;
+}
+#showless_1, #showless_2, #showless_3  {
+    position: relative;
+    left:43%;
+}
+.logo {
+    margin-left:-8px;
+    width:27px;
+}
+.site_name {
+    position: relative;
+}
+.site_name > a {
+    position: absolute;
+    padding-top: 5px;
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .links {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+   
+    .nav > div:first-child {
+        padding-top: 50px !important; 
+    }
+    .nav > div:last-child {
+        padding-top: 70px !important; 
+    }
+    .bio, .education , .skills, .interest, .references, .volunteer_experience{
+        padding-right: 40px;
+    }  
+}
+
+@media only screen and (max-width: 767px){
+    .links {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .bio {
+        padding-left: 50px;
+    }
+    .nav > div:first-child {
+        padding-top: 50px !important; 
+    }
+    .nav > div:last-child {
+        padding-top: 70px !important; 
+    }
+    .bio, .education , .skills, .interest, .references, .volunteer_experience{
+        padding-right: 40px;
+    }
+  
+}
+@media only screen and (max-width: 475px){
+    .nav > div:last-child {
+        padding-top: 20px !important; 
+        padding-left: 0px;
+    }
+    .links {
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+    .bio {
+        padding-left: 30px;
+    }
+    .links {
+        padding-right: 0px;
+    }
+    .nav > div {
+        text-align: center;
+    }
+    .image_div > img {
+        text-align: center;
+        width: 40%;
+    }
+    .col-xs-12a {width: 100%;}
+    .nav > div:first-child {
+        padding-left: 0px;
+    }
+    ul {
+        padding-inline-start: 20px;
+    }
+    .location, .date {
+        float: none;
+    }
+    .work {
+        display: none;
+    }
+    .volunteer {
+        margin-block-start: 0px;
+    }
+    .bio_details {
+        display: none;
+    }
+    .bttn {
+        /* text-align: center; */
+        display: block;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+    .bttn > button {
+        margin-left:0px !important;
+    }
+    .location {
+        margin-block-end: 15px;
+    }
+    .bio, .education , .skills, .interest, .references, .volunteer_experience{
+        padding-right: 20px;
+    }
+    .bio_details {
+        margin-top:-40px;
+    }
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-13 {width:90%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 767px){
+    .col-xs-1 {width: 8.33%;}
+   .col-xs-2 {width: 16.66%;}
+   .col-xs-3 {width: 25%;}
+   .col-xs-4 {width: 33.33%;}
+   .col-xs-5 {width: 41.66%;}
+   .col-xs-6 {width: 50%;}
+   .col-xs-7 {width: 58.33%;}
+   .col-xs-8 {width: 66.66%;}
+   .col-xs-9 {width: 75%;}
+   .col-xs-10 {width: 83.33%;}
+   .col-xs-11 {width: 91.66%;}
+   .col-xs-12 {width: 100%;}
+   }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .col-sm-1 {width: 8.33%;}
+   .col-sm-2 {width: 16.66%;}
+   .col-sm-3 {width: 25%;}
+   .col-sm-4 {width: 33.33%;}
+   .col-sm-5 {width: 41.66%;}
+   .col-sm-6 {width: 50%;}
+   .col-sm-7 {width: 58.33%;}
+   .col-sm-8 {width: 66.66%;}
+   .col-sm-9 {width: 75%;}
+   .col-sm-10 {width: 83.33%;}
+   .col-sm-11 {width: 91.66%;}
+   .col-sm-12 {width: 100%;}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .col-md-1 {width: 8.33%;}
+   .col-md-2 {width: 16.66%;}
+   .col-md-3 {width: 25%;}
+   .col-md-4 {width: 33.33%;}
+   .col-md-5 {width: 41.66%;}
+   .col-md-6 {width: 50%;}
+   .col-md-7 {width: 58.33%;}
+   .col-md-8 {width: 66.66%;}
+   .col-md-9 {width: 75%;}
+   .col-md-10 {width: 83.33%;}
+   .col-md-11 {width: 91.66%;}
+   .col-md-12 {width: 100%;}
+}
+@media only screen and (min-width: 1200px) {
+   .col-lg-1 {width: 8.33%;}
+   .col-lg-2 {width: 16.66%;}
+   .col-lg-3 {width: 25%;}
+   .col-lg-4 {width: 33.33%;}
+   .col-lg-5 {width: 41.66%;}
+   .col-lg-6 {width: 50%;}
+   .col-lg-7 {width: 58.33%;}
+   .col-lg-8 {width: 66.66%;}
+   .col-lg-9 {width: 75%;}
+   .col-lg-10 {width: 83.33%;}
+   .col-lg-11 {width: 91.66%;}
+   .col-lg-12 {width: 100%;}
+}
+
+body{
+    padding: 0px !important;
+    margin:0px !important;
+}
